@@ -1,26 +1,19 @@
 # mkdocs.yml
-# Configuration for MkDocs documentation hosting
+# Documentation configuration for the MS Data Analytics capstone project
 
-site_name: Kiruthikaa’s Applied ML Projects
-site_url: https://kiruthikaa2512.github.io/applied-ml-kiruthikaa/
-repo_url: https://github.com/kiruthikaa2512/applied-ml-kiruthikaa
-site_description: Portfolio of applied machine learning projects with hosted notebooks and reflections
+site_name: AI-Driven Delivery Risk Prediction
+site_description: Explainable machine learning and decision support for cross-border e-commerce supply chains
 site_author: Kiruthikaa Natarajan Srinivasan
 
-# Points MkDocs to your documentation folder and build directory
+site_url: https://kiruthikaa2512.github.io/cb_supply_risk/
+repo_url: https://github.com/Kiruthikaa2512/cb_supply_risk
+repo_name: Kiruthikaa2512/cb_supply_risk
+
 docs_dir: docs
 site_dir: site
 
 theme:
   name: mkdocs
-  features:
-    - navigation.expand
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - toc.follow
 
 plugins:
   - search
@@ -33,21 +26,12 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
 
-# Navigation sidebar and page routing
 nav:
   - Home: index.md
-  - Project 01:
-      - Overview: project01/index.md
-      - Hosted Notebook: project01/ml01_kiruthikaa.html
-  - Project 02:
-      - Overview: project02/index.md
-      - Hosted Notebook: project02/ml02_kiruthikaa.html
-  - Project 03:
-      - Overview: project03/index.md
-      - Hosted Notebook: project03/ml03_kiruthikaa.html
-  - Project 04:
-      - Overview: project04/index.md
-      - Hosted Notebook: project04/ml04_kiruthikaa.html
-  - Project 05:
-      - Overview: project05/index.md
-      - Hosted Notebook: project05/ensemble-kiruthikaa.html
+  - Project Overview: project-overview.md
+  - Data Cleaning: data-cleaning.md
+  - Exploratory Data Analysis: exploratory-data-analysis.md
+  - Predictive Modeling: predictive-modeling.md
+  - Results and Interpretation: results-interpretation.md
+  - Dashboard: dashboard.md
+  - Conclusions: conclusions.md
