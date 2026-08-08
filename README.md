@@ -12,7 +12,7 @@
 - **University:** Northwest Missouri State University
 - **Date Prepared:** July 2026
 - **Last Updated:** August 2026
-- **Current Phase:** Results Interpretation and Final Reporting
+- **Current Phase:** Final Report and Capstone Submission
 - **GitHub Repository:** [cb_supply_risk](https://github.com/Kiruthikaa2512/cb_supply_risk)
 
 ---
@@ -23,7 +23,7 @@ Cross-border e-commerce supply chains involve suppliers, warehouses, transportat
 
 This project develops an explainable machine learning approach for predicting whether a cross-border e-commerce shipment is likely to be delayed. The work covers data inspection, cleaning, exploratory analysis, feature preparation, model comparison, threshold optimization, final evaluation, SHAP-based interpretation, and business-oriented communication of results.
 
-A supplementary PyShiny dashboard was also developed to demonstrate how the selected model could support order-level delay-risk prioritization.
+A supplementary PyShiny dashboard was also developed and deployed as a public web application to demonstrate how the selected model can support order-level delay-risk prioritization.
 
 ---
 
@@ -111,8 +111,9 @@ where:
 10. Threshold analysis
 11. Final model evaluation
 12. SHAP explainability
-13. Supplementary PyShiny dashboard
-14. Results interpretation and conclusions
+13. Supplementary PyShiny dashboard development
+14. Production deployment on shinyapps.io
+15. Results interpretation and conclusions
 
 ---
 
@@ -327,7 +328,23 @@ The dashboard includes:
 - model-performance summaries
 - SHAP-based risk-driver interpretation
 
-The dashboard is a local interactive prototype. It is not connected to live carrier, port, weather, warehouse, or enterprise systems.
+TThe dashboard has been deployed as a public PyShiny web application on shinyapps.io. It demonstrates the end-to-end integration of the saved preprocessing pipeline, trained Logistic Regression model, and selected 0.37 decision threshold. The application is intended as an analytical decision-support prototype and is not connected to live carrier, port, weather, warehouse, or enterprise systems.
+
+**Live Application:** [AI-Driven Cross-Border Supply Chain Risk Dashboard](https://kiruthikaa2512.shinyapps.io/cb-supply-risk/)
+
+## Dashboard Preview
+
+### Production Dashboard Overview
+
+![Production Dashboard Overview](outputs/dashboard_screenshots/dashboard_overview.jpg)
+
+### Delivery-Risk Prediction
+
+![Delivery-Risk Prediction](outputs/dashboard_screenshots/delay_risk_prediction.jpg)
+
+### Model Explainability
+
+![Model Explainability](outputs/dashboard_screenshots/model_explainability.jpg)
 
 ## Run the Dashboard
 
@@ -382,7 +399,6 @@ cb_supply_risk/
 ├── .gitattributes
 ├── .gitignore
 ├── LICENSE
-├── mkdocs.yml
 ├── pyproject.toml
 ├── README.md
 └── requirements.txt
@@ -401,7 +417,6 @@ cb_supply_risk/
 | `src/` | Reusable source code, if added |
 | `requirements.txt` | Required Python packages |
 | `pyproject.toml` | Project and tool configuration |
-| `mkdocs.yml` | Documentation configuration |
 | `.gitignore` | Excludes local environments, caches, and temporary files |
 | `README.md` | Main project documentation |
 
@@ -422,7 +437,6 @@ cb_supply_risk/
 - Visual Studio Code
 - Git
 - GitHub
-- MkDocs
 
 ---
 
@@ -479,24 +493,19 @@ Run the notebook cells in order because later sections depend on objects created
 - Final test evaluation
 - Confusion-matrix analysis
 - SHAP explainability
-- Saved model package
+- Saved preprocessing and model package
 - Supplementary PyShiny dashboard
 - Dashboard visualizations
-
-## In Progress
-
-- Module 6 discussion
-- Results Interpretation section
-- Conclusions section
-- Final Overleaf report update
+- Production deployment on shinyapps.io
+- Results interpretation
+- Conclusions
 - Final repository documentation
 
 ## Remaining
 
-- Final report review
+- Final report polish
 - Final GitHub repository review
 - Final course submission
-
 ---
 
 # Academic Purpose
